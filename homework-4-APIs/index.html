@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist — Music Player</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/source.js"></script>
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="logo-icon">●</span>Spotify</div>
+        <nav class="main-nav">
+          <a href="#" class="active"><span>⌂</span>Home</a>
+          <a href="#"><span>⌕</span>Search</a>
+          <a href="#"><span>▣</span>Your Library</a>
+        </nav>
+
+      <div class="playlist-section">
+        <div class="playlist-title">
+          <span>Your Playlists</span>
+          <button>+</button>
+        </div>
+
+        <a href="#">Liked Songs</a>
+        <a href="#">My Playlist #1</a>
+        <a href="#">Workout Mix</a>
+        <a href="#">Chill Vibes</a>
+      </div>
+    </aside>
+
+
+    <!-- Main content -->
+    <main class="main-content">
+
+      <!-- Top bar -->
+      <header class="topbar">
+        <div class="navigation-buttons">
+          <button>‹</button>
+          <button>›</button>
+        </div>
+
+        <div class="profile">
+          <img src="https://i.pravatar.cc/100?img=12" alt="Profile" >
+          <span>My Profile</span>
+          <span>⌄</span>
+        </div>
+      </header>
+
+      <!-- Artist hero -->
+      <section class="artist-hero">
+        <div class="artist-image">
+          <img 
+            src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=900&q=80" 
+            alt="Artist"
+          >
+        </div>
+
+        <div class="artist-info">
+          <div class="verified">✓ Verified Artist</div>
+          <h1 id="artist-name">Artist Name</h1>
+          <p class="followers">12,345,678 monthly listeners</p>
+        </div>
+      </section>
+
+      <!-- Artist controls -->
+      <section class="artist-controls">
+        <button class="play-button">▶</button>
+        <button class="follow-button">Follow</button>
+        <button class="more-button">•••</button>
+      </section>
+
+      <!-- Tracks -->
+      <section class="section">
+        <h2>Popular</h2>
+        <div class="track-list">
+          
+          <div class="track">
+            <span class="track-rank">1</span>
+            <img
+              src="https://images.unsplash.com/photo-1711054824441-064a99073a0b?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Album"
+            >
+            <div class="track-info">
+              <div class="track-title">Popular Song</div>
+              <div class="track-album">Album Name</div>
+            </div>
+            <span class="track-number">0</span>
+            <span class="track-duration">3:42</span>
+            <button class="track-more">•••</button>
+          </div>
+
+          <div class="track">
+            <span class="track-rank">2</span>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1757392183531-16c1990f7b43?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWxidW0lMjBjb3ZlcnxlbnwwfHwwfHx8MA%3D%3Dg"
+              alt="Album"
+            >
+            <div class="track-info">
+              <div class="track-title">Another Song</div>
+              <div class="track-album">Another Album</div>
+            </div>
+            <span class="track-number">0</span>
+            <span class="track-duration">4:01</span>
+            <button class="track-more">•••</button>
+          </div>
+
+
+          <div class="track">
+            <span class="track-rank">3</span>
+            <img
+              src="https://images.unsplash.com/photo-1629923759854-156b88c433aa?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Album"
+            >
+            <div class="track-info">
+              <div class="track-title">Hit Single</div>
+              <div class="track-album">Greatest Hits</div>
+            </div>
+            <span class="track-number">0</span>
+            <span class="track-duration">3:15</span>
+            <button class="track-more">•••</button>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- Albums -->
+      <section class="section">
+        <div class="section-header">
+          <h2>Discography</h2>
+          <a href="#">Show all</a>
+        </div>
+
+        <div class="album-grid">
+          <article class="album-card">
+            <img
+              src="https://images.unsplash.com/photo-1616663395403-2e0052b8e595?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Album"
+            >
+            <h3>Album Name</h3>
+            <p>2024 • Album</p>
+          </article>
+
+
+          <article class="album-card">
+            <img
+              src="https://media.istockphoto.com/id/2280455034/photo/abstract-layered-waveform-background.webp?s=612x612&w=is&k=20&c=wmP7QjPOZpDRS4kFOFhcF9XC4axcr_cX3NJ0QNq0upI="
+              alt="Album"
+            >
+            <h3>Another Album</h3>
+            <p>2022 • Album</p>
+          </article>
+
+
+          <article class="album-card">
+            <img
+              src="https://img.magnific.com/free-vector/electro-music-album_53876-67227.jpg?t=st=1790891451~exp=1790895051~hmac=11447ea423bccd4cce463dfdcd7269b4276f3b32775a34724b62ae70ee2543b4&w=1480"
+              alt="Album"
+            >
+            <h3>Greatest Hits</h3>
+            <p>2020 • Compilation</p>
+          </article>
+
+
+          <article class="album-card">
+            <img
+              src="https://img.magnific.com/premium-psd/plastic-overlay-album-art-cover-psd-template-11_984100-728.jpg?w=2000"
+              alt="Album"
+            >
+            <h3>Early Years</h3>
+            <p>2018 • Album</p>
+          </article>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <!-- Bottom player -->
+  <footer class="player">
+    <div class="now-playing">
+      <img
+        src="images/34556.jpg"
+        alt="Currently playing"
+      >
+      <div>
+        <strong>Popular Song</strong>
+        <span>Artist Name</span>
+      </div>
+      <button>♡</button>
+    </div>
+
+    <div class="player-center">
+      <div class="player-controls">
+        <button>↶</button>
+        <button class="player-play">▶</button>
+        <button>↷</button>
+      </div>
+
+      <div class="progress-container">
+        <span>1:12</span>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <span>3:42</span>
+      </div>
+
+    </div>
+
+
+    <div class="volume">
+      <span>🔊</span>
+      <div class="volume-bar">
+        <div></div>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+</html>
